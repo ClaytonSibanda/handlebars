@@ -1,0 +1,28 @@
+
+
+
+<body>
+  <h1>Game Of Thrones</h1>
+<div id='main'>
+  </div>
+<script id='character' type='text/x-handlebars-template'>
+{{#each characters}}
+
+<h2>{{name}}</h2>
+<p>{{house}}</p>
+<p>{{actor}}</p>
+
+<p>{{#if location}}{{location}} {{else if house}} {{house}}
+{{else}} unknown{{/if}}</p>
+{{/each}}
+
+</script>
+</body>
+
+<script src="./handlebars-v4.0.11.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+
+  <script src='./script.js'></script>
